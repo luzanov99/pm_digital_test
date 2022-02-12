@@ -1,11 +1,11 @@
-from unicodedata import name
-from django.shortcuts import get_object_or_404, render
+
+from django.shortcuts import get_object_or_404
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 from rest_framework import status
-from .serialisers import CategorySerializer, ProductSerializer
+from .serialisers import CategorySerializer
 from .models import Product, Category
-from django_filters.rest_framework import DjangoFilterBackend
+
 # Create your views here.
 '''Список продуктов по определнной карточке'''
 class  ProductViewSet(ModelViewSet):
